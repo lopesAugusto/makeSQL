@@ -1,3 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+
+        Nome:
+        <input type="text" name="nome" value="<?php echo !empty($_POST['nome']) ? $_POST['nome'] : ''; ?>"><br>
+        Cpf:
+        <input type="text" name="cpf" value="<?php echo !empty($_POST['cpf']) ? $_POST['cpf'] : ''; ?>"><br>
+        Data inicial:
+        <input type="date" name="data_inicial" value="<?php echo !empty($_POST['data_inicial']) ? $_POST['data_inicial'] : ''; ?>"><br>
+        Data final:
+        <input type="date" name="data_final" value="<?php echo !empty($_POST['data_final']) ? $_POST['data_final'] : ''; ?>"><br>
+       
+        
+        Data inicial um:
+        <input type="date" name="data_inicial_um" value="<?php echo !empty($_POST['data_inicial_um']) ? $_POST['data_inicial_um'] : ''; ?>"><br>
+        Data final um:
+        <input type="date" name="data_final_um" value="<?php echo !empty($_POST['data_final_um']) ? $_POST['data_final_um'] : ''; ?>"><br>
+        <input type="submit">
+    </form>
+    
+    <!--
+    esse form serve para testar o index
+    -->
+    
+    
+</body>
+</html>
+
+
 <?php
 echo "<a href='form.php'> Fomulario</a>";
 
@@ -228,3 +266,4 @@ $recebe = montaArrayBusca($post, $_POST);
 $date = setSlqConsulta($recebe);
 
 print_r($date);
+?>
