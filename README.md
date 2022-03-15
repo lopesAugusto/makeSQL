@@ -2,7 +2,7 @@
 criar where do sql
 
 # monte um array assim
-# o a chara é o nome do input do html (html_name), o valor é o nome da coluna do banco de dados
+# o nome do input do html (html_name), o valor é o nome da coluna do banco de dados
 $post = array(
     //html_name => db_collum
     'nome' => 'pessoa',
